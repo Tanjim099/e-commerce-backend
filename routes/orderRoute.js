@@ -6,10 +6,10 @@ const orderRoutes = express.Router();
 //ROUTES
 
 //GET ORDERS ROUTE
-orderRoutes.get("/orders/:buyerid", requredSignIn, getOrders)
+orderRoutes.get("/orders/:buyerid", getOrders)
 
 //GET ALL ORDERS
-orderRoutes.get("/all-orders", requredSignIn, isAdmin, getAllOrders)
+orderRoutes.get("/all-orders", getAllOrders)
 
 //ORDER STATUS UPDATE
 orderRoutes.put("/order-status/:orderId", orderStatus)

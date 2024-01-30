@@ -81,6 +81,7 @@ export const userLogin = async (req, res) => {
         });
 
         res.cookie('token', token);
+        console.log("token:-", token);
         res.status(200).send({
             success: true,
             message: "User Login Successfully",
