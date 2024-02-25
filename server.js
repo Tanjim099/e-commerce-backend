@@ -28,7 +28,7 @@ app.use(cookieParser())
 
 //middelwares
 const corsOptions = {
-    origin: 'https://ecommerce-app-liart-three.vercel.app/',
+    origin: '*',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true, // Allow cookies and HTTP authentication to be sent cross-origin
     optionsSuccessStatus: 204, // Some legacy browsers (IE11) choke on 204
